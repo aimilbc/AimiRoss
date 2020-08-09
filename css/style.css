@@ -3,7 +3,14 @@
 	padding: 0;
 }
 
-header{
+ul, h1, h2{
+	font-family: 'Cinzel Decorative','Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+h4{
+	font-family: 'Bokor','Palatino Linotype', 'Book Antiqua', Palatino, serif;
+}
+
+#container{
 	background-image: url(pics/flower.jpg);
 	height: 100vh;
 	width: 100%;
@@ -11,123 +18,108 @@ header{
 	background-position: center;
 }
 
-ul{
+#bar1 ul{
 	float: right;
 	list-style-type: none;
-	
 }
 
-ul li{
+
+#bar1 ul li{
 	display: inline-block;
 }
 
-ul li a{
+#bar1 ul li a{
 	text-decoration: none;
 	color: #fff;
 	font-size: 11px;
 	padding: 5px;
+
 	border: 1px solid transparent;
 	transition: 0.8s ease;
-
 }
 
-ul li a:hover{
+#bar1 ul li a:hover{
 	background-color: #fff;
 	color: #F70D3C;
 }
 
-ul li.active a {
+#bar1 ul li.active a {
 	background-color: #fff;
 	color: #F70D3C;
 }
 
-/*.flex_container{
-	position: fixed;
-	top: 40%;
-	left: 30%;
+#bar2 ul.center{
+	margin: 0;
+	padding: 0;
+	text-align: center;
+}
 
-	display: flex;
-	flex-wrap: wrap;
-	flex-direction: column;
-	align-content: center;
-}*/
+#bar2 ul.center li{
+	list-style-type: none;
+	display: inline-block;
+	margin: 0 2px 0 0;
+}
 
-.title {
+#bar2 ul li a{
+	text-decoration: none;
+	font-size: 11px;
+	color: #C3F93D;
+	padding: 5px;
+
+	border: 1px solid transparent;
+	transition: 0.8s ease;
+}
+
+
+#nameTitle {
 	padding-top: 200px; 
 	text-align: center;
 }
 
-.title h1{
+#nameTitle h1{
 	color: #FFF;
 	font-size: 40px;
 }
 
-.title h1::first-letter {
+#nameTitle h1::first-letter {
 	font-size: 120%;
 	color: #F70D3C;
 }
 
-.title h2{
+#nameTitle h2{
 	color: #FFF;
 	font-size: 40px;
 }
 
-.title h2::first-letter {
+#nameTitle h2::first-letter {
 	font-size: 120%;
 	color: #F70D3C;
 }
 
-.title2 {
+#nameTitle2 {
 	padding-top: 100px; 
 	text-align: center;
 }
 
-.title2 h1{
+#nameTitle2 h1{
 	color: #FFF;
 	font-size: 40px;
 }
 
-.title2 h1::first-letter {
+#nameTitle2 h1::first-letter {
 	font-size: 120%;
 	color: #F70D3C;
 }
 
 
-.bar ul{
-	position: fixed;
-	left: 10%;
-}
-
-
-.bar ul li a{
-/*	padding: 0px 30px 20px;*/
-	text-decoration: none;
-	font-size: 10px;
-	color: #C3F93D;
-
-	border: 1px solid transparent;
-	transition: 0.8s ease;
-}
-
-
-.bar ul li a:hover{
-	background-color: #fff;
-	color: #F70D3C;
-}
-
-
-
-.summary {
-	padding: 100px 30px 20px;
+#content {
+	padding: 10px 30px 20px;
 	text-align: center;
-/*	position: fixed;
-	top: 65%;
-	left: 50%;
-	transform: translate(-50%,-50%);*/
 }
 
 
-.summary h4{
+#content h4{
+	padding-top: 80px; 
 	color: #F70D3C;
 	font-size: 15px;
 	color: #F70D3C;
@@ -135,89 +127,74 @@ ul li.active a {
 	line-height: 20px;
 }
 
-
-.clsScroll {
-	padding-top: 30px; 
-	position: fixed;
-	top: 60vh;
-	left: 50%;
-	transform: translate(-50%,-50%);
+#form1 {
+	margin: 10px;
 }
 
+#clsScroll{ 
+	height: 200px;
+    width: 98vw;
+    position: relative;
 
-.clsScroll{
-	/*height: 300px;*/
-	height: 50vw;
-	width: 90vw;
 	overflow-x: scroll;
 	overflow-y: scroll;
-
-	color: #F70D3C;
-	font-size: 15px;
-	color: #F70D3C;
-	
-	line-height: 20px;
 }
 
+footer {
+	position: absolute;
+    bottom: 0; 
+    right: 0;
+	font-size: 8px;
+	color: #fff;
+}
 
 @media only screen and (min-width: 1000px){
-ul li a{
+
+#bar1 ul li a{
 	font-size: 20px;
-	padding: 10px;
-}
-.title {
-	padding-top: 200px; 
-	text-align: center;
 }
 
-.title h1{
-	color: #FFF;
+#bar2 ul.center li{
+	margin: 0 10px 0 0;
+}
+
+#bar2 ul li a{
+	font-size: 20px;
+}
+
+#nameTitle h1{
 	font-size: 60px;
 }
 
-.title h2{
-	color: #FFF;
-	font-size: 50px;
+#nameTitle h2{
+	font-size: 40px;
 }
 
-.bar ul{
-	position: fixed;
-	left: 25vw;
-}
-
-
-.bar ul li a{
-	font-size: 20px;
-}
-
-.summary h4{
-	color: #F70D3C;
-	font-size: 27px;
-	color: #F70D3C;
-	
-	line-height: 30px;
-}
-
-.clsScroll {
-	position: fixed;
-	top: 80vh;
-	left: 50%;
-	transform: translate(-50%,-50%);
+#nameTitle2 h1{
+	font-size: 40px;
 }
 
 
-.clsScroll{
-	/*height: 300px;*/
-	height: 40vw;
-	width: 60vw;
-	overflow-x: scroll;
-	overflow-y: scroll;
+#content h4{
+	font-size: 25px;
+	line-height: 40px;
+	overflow: scroll;
+}
 
-	color: #F70D3C;
-	font-size: 15px;
-	color: #F70D3C;
-	
-	line-height: 20px;
+#form1 {
+	margin: 30px;
+	padding: 0;
+}
+
+#clsScroll{ 
+	height: 300px;
+    width: 60vw;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+footer {
+	font-size: 18px;
 }
 
 }
