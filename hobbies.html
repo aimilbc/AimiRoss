@@ -7,37 +7,37 @@
 	<link rel="shortcut icon" type="image/png" href='css/pics/favicon-32x32.png'>
 	<link href='https://fonts.googleapis.com/css?family=Cinzel Decorative' rel='stylesheet'>
 	<link href='https://fonts.googleapis.com/css?family=Bokor' rel='stylesheet'>
-	<style>
-		ul{
-			font-family: 'Cinzel Decorative','Palatino Linotype', 'Book Antiqua', Palatino, serif;
-		}
-		h1{
-			font-family: 'Cinzel Decorative','Palatino Linotype', 'Book Antiqua', Palatino, serif;
-		}
-		h2{
-			font-family: 'Cinzel Decorative','Palatino Linotype', 'Book Antiqua', Palatino, serif;
-		}
-		h4{
-			font-family: 'Bokor','Palatino Linotype', 'Book Antiqua', Palatino, serif;
-		}
-	</style>
 </head>
 <body>
 	<header>
-		<div class="main">
-			<ul>
-				<li><a href="index.html">Home</a></li>
-				<li class="active"><a href="hobbies.html">Interests</a></li>
-				<li><a href="nonProgrammingProject.html">Non-programming project</a></li>
-				<li><a href="toDoList.html">To do list</a></li>
-			</ul>
-		</div>
-		<div class="title">
-			<h1>My interests</h1>
-		</div>
-		<form id = "form1" runat = "server">
-				<div class = "clsScroll">
-					<div class="summary">
+		<div id = "container">
+
+			<div id= "bar1">
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li class="active"><a href="hobbies.html">Interests</a></li>
+					<li><a href="nonProgrammingProject.html">Non-coding project</a></li>
+					<li><a href="toDoList.html">To do list</a></li>
+				</ul>
+			</div>
+
+			<div id= "nameTitle">
+				<h1>My interests</h1>
+			</div>
+
+			<div id= "bar2">
+				<ul class="center">
+					<li><a href="Aimi's Resume.pdf" target="_blank">Resume</a></li>
+					<li><a href="https://www.linkedin.com/in/aimi-ross-79694b193/" target="_blank">LinkedIn</a></li>
+					<li><a href="https://github.com/aimilbc/" target="_blank">Github</a></li>
+					<li><a href="https://www.instagram.com/gorigoriba7/" target="_blank">Instagram</a></li>
+					<li><a href="mailto:touyamaaimi927@gmail.com"> Email</a></p>
+				</ul>
+			</div>
+
+			<form id = "form1" runat = "server">
+				<div id = "clsScroll">
+					<div id="content">
 						<h4> My next step is to be a part of making a positive impact on people.
 							<br> Online video communication tools rescued me from homesickness and made me stronger and a believer.
 							<br> Since then, I have endless love and passion for software because I experienced that software can turn things possible, and the outcome can make people happy.
@@ -46,7 +46,10 @@
 					</div>
 				</div>
 			</form>
-		
+			<footer>
+				Copyright &copy; 2020 Aimi Ross
+			</footer>
+		</div>
 	</header>
 </body>
 </html>
