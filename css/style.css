@@ -178,7 +178,7 @@ footer {
 #content h4{
 	font-size: 25px;
 	line-height: 40px;
-	overflow: scroll;
+	overflow: hidden;
 }
 
 #form1 {
@@ -191,6 +191,7 @@ footer {
     width: 60vw;
     margin-right: auto;
     margin-left: auto;
+    overflow-x: hidden;
 }
 
 footer {
